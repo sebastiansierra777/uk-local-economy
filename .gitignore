@@ -216,3 +216,16 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Ignore mac0S system files
+.DS_Store
+**/.DS_Store
+
+# Ignore data files
+*.csv
+*.xlsx
+*.xls
+
+# Ignore all general outputs
+output/
+!output/.gitkeep
