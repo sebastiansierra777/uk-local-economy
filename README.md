@@ -4,6 +4,22 @@ Analysis of Gross Domestic Product per Head, and Gross Disposable Household Inco
 ## KEY FINDINGS
 to be filled...
 
+**SCATTER:**
+![Scatterplot of UK Local Economy](assets/scatter_uk_local_economy.png)
+
+**GDP PER CAPITA MAP**
+![GDP Per Capita Map of UK Local Economy](assets/gdp_per_capita.png)
+**Interactive version:** [Datawrapper Map](https://www.datawrapper.de/_/aEZjY/?v=2)
+
+**GDHI PER HEAD MAP**
+![GDHI Per Head Map of UK Local Economy](assets/gdhi_per_head.png)
+**Interactive version:** [Datawrapper Map](https://www.datawrapper.de/_/zHzHJ/?v=7)
+
+**GDHI-to-GDP RATIO MAP**
+![GDHI-to-GDP Ratio Map of UK Local Economy](assets/gdhi_gdp_ratio.png)
+**Interactive version:** [Datawrapper Map](https://www.datawrapper.de/_/tVfeD/?v=2)
+
+
 ## HOW TO RUN IT
 1. Clone the repository: `git clone https://github.com/sebastiansierra777/uk-local-economy.git`
 2. Navigate to the project folder: `cd uk-rental-prices`
