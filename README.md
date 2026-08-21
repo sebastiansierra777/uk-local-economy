@@ -3,42 +3,44 @@ Analysis of Gross Domestic Product (GDP) per Head, and Gross Disposable Househol
 
 ## KEY FINDINGS
 
-**SCATTER:**
+### SCATTER: ###
 ![Scatterplot of UK Local Economy](assets/scatter_uk_local_economy.png)
 
-**LINEAR REGRESSION ANALYSIS:**
+### **LINEAR REGRESSION ANALYSIS:** ###
 2023 GDHI per Head by UK Local Authority was regressed on 2023 GDP per Head by UK Local Authority. 
 
 Before calculating the regression, two previous steps were completed: 
 
-1) The local authorities of City of London, and Westminster were dropped, since their values, especially their GDP per Capita, are very distorted. 
-These two London Boroughs concentrate a lot of economic activity that is disproportionate to their population. The City of London for example, is arguably the top financial center in the world alongside New York City, but its total resident population is less than 10 thousand. 
-Westminster is not a case as extreme, but it still concentrates the output of most UK government offices, Mayfair hedgefunds, Soho creative offices and so on, which causes its GDP to balloon.
+1) The local authorities of **City of London**, and **Westminster** were dropped, since their values, especially their GDP per Capita, are very distorted. 
+These two London Boroughs concentrate a lot of economic activity that is disproportionate to their population. The City of London for example, is arguably the top financial center in the world alongside New York City, but **its total resident population is less than ten thousand (10,000)**. 
+Westminster is not a case as extreme, but it still condenses the output of most UK government offices, Mayfair hedgefunds, Soho creative offices and so on, which causes its GDP to balloon.
 
-2) The GDHI per Head and GDP per Capita values were log-transformed. Economic data (and economic geography data in partcular) is often log-transformed before being regressed in order to fix the behaviour of the residuals of the regression, and in order to interpret the coefficients as elasticities.
+2) The **GDHI per Head** and **GDP per Capita** values were **log-transformed**. Economic data (and economic geography data in partcular) is often log-transformed before being regressed in order **to fix the behaviour of the residuals of the regression**, and in order **to interpret the coefficients as elasticities**.
 
-That being said, below we can see the linear regression log, and its corresponding analysis:
+**That being said, below we can see the linear regression log, and its corresponding analysis:**
 
 **LINEAR REGRESSION LOG:**
 ![GDHI per Head on GDP per Capita Linear Regression Log](assets/regression_results.png)
 
-1) The slope is 0.3055, meaning that for every 1% increase in GDP per Capita in a UK local authority, a resident of the area takes home 0.3055% of that increase, in the form of Gross Disposable Household Income (GDHI).
+1) **The slope is 0.3055**, meaning that **for every 1% increase in GDP per Capita in a UK local authority, a resident of the area takes home 0.3055% of that increase**, in the form of Gross Disposable Household Income (GDHI).
 
-2) The standard error of the slope is 0.031, quite low compared to the previously seen coefficient value of 0.3055, indicating that the slope figure is highly precise. 
+2) **The standard error of the slope is 0.031**, quite low compared to the previously seen coefficient value of 0.3055, indicating that the slope figure is highly precise. 
 
-3) The t-statistic of the slope is 9.773. That is to say: 9.773 standard deviations away from zero (the null hypothesis). We can safely reject the null hypothesis and say that GDP per capita does have a mathematical influence on GDHI per head.
+3) **The t-statistic of the slope is 9.773**. That is to say: 9.773 standard deviations away from zero (the null hypothesis). We can safely reject the null hypothesis and say that GDP per capita does have a mathematical influence on GDHI per head.
 
-4) The p-value is 0.000, way lower than the 0.05 threshold. This low p-value tells us that the probability of seing a 9.7 t-statistic for the slope if the relationship between GDP and GDHI did not exist is essentially zero.
+4) **The p-value is 0.000**, way lower than the 0.05 threshold. This low p-value tells us that the probability of seing a 9.7 t-statistic for the slope if the relationship between GDP and GDHI did not exist is essentially zero.
 
-5) The 95% confidence interval values tells us that we can say, with 95% confidence, that the true elasticiy of GDP on GDHI across the UK falls between 0.244% and 0.367%
+5) The 95% confidence interval values tells us that we can say, with 95% confidence, that the true elasticiy of GDP on GDHI across the UK falls between **0.244% and 0.367%.**
 
-6) Our R-squared value is 0.216, meaning that 21.6% of the variance in GDHI per Head across the UK can be explained by GDP per Capita. This number may seem low at first, but we must remember that GDHI per Head is also influenced by other factors such as commuting patterns, zoning laws or housing developments. Factors that we have not captured in this exercise.
+6) Our **R-squared value is 0.216**, meaning that **21.6% of the variance in GDHI per Head across the UK can be explained by GDP per Capita**. This number may seem low at first, but we must remember that GDHI per Head is also influenced by other factors such as commuting patterns, zoning laws or housing developments. Factors that we have not captured in this exercise.
 
 **NOTE #1:** **Skewness** and **Kurtosis** are 1.034 and 6.760 respectively, which is typical of economic data. Economic data is almost always skewed to the right, due to income and wealth having a hard floor (£0), but virtually having no ceiling.
 
 **NOTE #2: Omnibus** and **Jarque-Bera** values are indicating that the residuals of the model are not normally distributed. This is to be expected, since this data obviously exhibits spatial autocorrelation. The model needs a residual analysis, and from there, spatial adjustments with spatial weights and other econometric techniques. 
 
-**Below are links to the Datawrapper maps I made with the data. PNGs of these maps can be found in the `assets/` folder. The ratio map is shown here for exhibition**
+### MAPS: ### 
+
+Below are links to the Datawrapper maps I made with the data. PNGs of these maps can be found in the `assets/` folder. The ratio map is shown here for exhibition
 
 **GDP PER CAPITA MAP: [Datawrapper Link](https://www.datawrapper.de/_/aEZjY/?v=2)**
 
