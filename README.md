@@ -30,7 +30,7 @@ Westminster is not a case as extreme, but it still condenses the output of most 
 
 4) **The p-value is 0.000**, way lower than the 0.05 threshold. This low p-value tells us that the probability of seing a 9.7 t-statistic for the slope if the relationship between GDP and GDHI did not exist is essentially zero.
 
-5) The 95% confidence interval values tells us that we can say, with 95% confidence, that the true elasticiy of GDP on GDHI across the UK falls between **0.244% and 0.367%.**
+5) The 95% confidence interval values tells us that we can say, with 95% confidence, that the true elasticiy of GDHI on GDP across the UK falls between **0.244% and 0.367%.**
 
 6) Our **R-squared value is 0.216**, meaning that **21.6% of the variance in GDHI per Head across the UK can be explained by GDP per Capita**. This number may seem low at first, but we must remember that GDHI per Head is also influenced by other factors such as commuting patterns, zoning laws or housing developments. Factors that we have not captured in this exercise.
 
@@ -55,8 +55,8 @@ Below are links to the Datawrapper maps I made with the data. PNGs of these maps
 1. Clone the repository: `git clone https://github.com/sebastiansierra777/uk-local-economy.git`
 2. Navigate to the project folder: `cd uk-rental-prices`
 3. Recreate the environment from the yml file: `conda evn create -f environment.yml`
-4. Download the ONS files following the instructions under the data sources sections. Save the files in `data/raw`
-5. Navigate to `notebooks/` folder and run the notebooks inside sequentially
+4. Download the ONS files following the instructions under the data sources section. Save the files in `data/raw`
+5. Navigate to `notebooks/` folder and run the notebooks inside sequentially.
 
 ## PROJECT STRUCTURE
 * `assets/`: Images for README use only.
