@@ -13,9 +13,7 @@ Analysis of Gross Domestic Product (GDP) per Capita, and Gross Disposable Househ
 
 Before calculating the regression, two previous steps were completed: 
 
-1) The local authorities of **City of London**, and **Westminster** were dropped, since their values, especially their GDP per Capita, are very distorted. 
-These two London Boroughs concentrate a lot of economic activity that is disproportionate to their population. The City of London for example, is arguably the top financial center in the world alongside New York City, but **its total resident population is less than ten thousand (10,000)**. 
-Westminster is not a case as extreme, but it still condenses the output of most UK government offices, Mayfair hedgefunds, Soho creative offices and so on, which causes its GDP to balloon.
+1) The local authorities of **City of London**, and **Westminster** were dropped, since their values, especially their GDP per Capita, are very distorted because these two London Boroughs concentrate a lot of economic activity that is disproportionate to their population. 
 
 2) The **GDHI per Head** and **GDP per Capita** values were **log-transformed**. Economic data (and economic geography data in partcular) is often log-transformed before being regressed in order **to fix the behaviour of the residuals of the regression**, and in order **to interpret the coefficients as elasticities**.
 
