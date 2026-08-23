@@ -56,7 +56,7 @@ Below are links to the Datawrapper maps I made with the data. PNGs of these maps
 0. Navigate to the directory where you want to store the project folder (e.g., your Documents or Desktop folder): `cd ~/Documents`
 1. Clone the repository: `git clone https://github.com/sebastiansierra777/uk-local-economy.git`
 2. Navigate to the project folder: `cd uk-local_economy`
-3. Recreate the environment from the yml file: `conda evn create -f environment.yml`
+3. Recreate the environment from the yml file: `conda env create -f environment.yml`
 4. Activate the environment: `conda activate uk_local_economy`
 4. Download the ONS files following the instructions under the data sources section. Save the files in `data/raw`
 5. Navigate to `notebooks/` folder and run the notebooks inside sequentially.
