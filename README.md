@@ -1,12 +1,14 @@
 # uk-local-economy
-Analysis of Gross Domestic Product (GDP) per Head, and Gross Disposable Household Income (GDHI), by UK local Authority
+Analysis of Gross Domestic Product (GDP) per Capita, and Gross Disposable Household Income (GDHI) per Head, by UK local Authority
 
+---
 ## KEY FINDINGS
 
-### SCATTER: ###
+### Scatter:
 ![Scatterplot of UK Local Economy](assets/scatter_uk_local_economy.png)
 
-### **LINEAR REGRESSION ANALYSIS:** ###
+---
+### Linear Regression Analysis
 2023 GDHI per Head by UK Local Authority was regressed on 2023 GDP per Head by UK Local Authority. 
 
 Before calculating the regression, two previous steps were completed: 
@@ -17,7 +19,7 @@ Westminster is not a case as extreme, but it still condenses the output of most 
 
 2) The **GDHI per Head** and **GDP per Capita** values were **log-transformed**. Economic data (and economic geography data in partcular) is often log-transformed before being regressed in order **to fix the behaviour of the residuals of the regression**, and in order **to interpret the coefficients as elasticities**.
 
-**That being said, below we can see the linear regression log, and its corresponding analysis:**
+> Below is the linear regression log and the corresponding analysis of the coefficients:
 
 **LINEAR REGRESSION LOG:**
 ![GDHI per Head on GDP per Capita Linear Regression Log](assets/regression_results.png)
@@ -38,7 +40,8 @@ Westminster is not a case as extreme, but it still condenses the output of most 
 
 **NOTE #2: Omnibus** and **Jarque-Bera** values are indicating that the residuals of the model are not normally distributed. This is to be expected, since this data obviously exhibits spatial autocorrelation. The model needs a residual analysis, and from there, spatial adjustments with spatial weights and other econometric techniques. 
 
-### MAPS: ### 
+---
+### Maps:
 
 Below are links to the Datawrapper maps I made with the data. PNGs of these maps can be found in the `assets/` folder. The ratio map is shown here for exhibition
 
@@ -50,7 +53,7 @@ Below are links to the Datawrapper maps I made with the data. PNGs of these maps
 ![GDHI-to-GDP Ratio Map of UK Local Economy](assets/gdhi_gdp_ratio.png)
 **Interactive version:** [Datawrapper Map](https://www.datawrapper.de/_/tVfeD/?v=2)
 
-
+---
 ## HOW TO RUN IT
 1. Clone the repository: `git clone https://github.com/sebastiansierra777/uk-local-economy.git`
 2. Navigate to the project folder: `cd uk-rental-prices`
